@@ -10,7 +10,7 @@ export class AppComponent {
   title = environment.production? 'RealCare Sydney Office': 'rcs-office-dev';
   appVersion =  environment.version;
 
-  ngOnInit() {
+  ngOnInit(): void {
     document.title = this.title;
-  }
+  };
 }

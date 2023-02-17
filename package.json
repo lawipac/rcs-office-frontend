@@ -1,12 +1,12 @@
 {
   "name": "rcs-office",
-  "version": "0.0.3",
+  "version": "0.1.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build",
-    "publish-dev": "ng build --configuration=development && cd ./serverless/  && sls client deploy --no-confirm && cd ../",
+    "publish-dev": "npm --no-git-tag-version version patch && ng build --configuration=development && cd ./serverless/  && sls client deploy --no-confirm && cd ../",
     "publish-prod": "ng build --configuration=production && cd ./serverless/  && sls client deploy --stage prod --no-confirm && cd ../",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
