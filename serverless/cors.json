@@ -5,14 +5,14 @@
         ],
         "AllowedMethods": [
         	"GET",
-            "PUT",
-            "POST",
-            "DELETE"
+          "PUT",
+          "POST",
+          "DELETE"
         ],
         "AllowedOrigins": [
             "https://office.webtradepay.au",
-            "https://www.webtradepay.au",
-            "https://api.webtradepay.au"
+            "https://office-dev.webtradepay.au",
+            "https://moffice.webtradepay.au"
         ],
         "ExposeHeaders": []
     }
