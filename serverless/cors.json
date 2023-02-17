@@ -1,0 +1,19 @@
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+        	"GET",
+            "PUT",
+            "POST",
+            "DELETE"
+        ],
+        "AllowedOrigins": [
+            "https://office.webtradepay.au",
+            "https://www.webtradepay.au",
+            "https://api.webtradepay.au"
+        ],
+        "ExposeHeaders": []
+    }
+]
