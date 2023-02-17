@@ -77,7 +77,11 @@
               "browserTarget": "rcs-office:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "sslKey": "dist/key.pem",
+            "sslCert": "dist/cert.pem"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
