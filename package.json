@@ -1,11 +1,12 @@
 {
   "name": "rcs-office",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build",
-    "publish-dev": "ng build --configuration=production && cd ./serverless/  && sls client deploy --no-confirm && cd ../",
+    "publish-dev": "ng build --configuration=development && cd ./serverless/  && sls client deploy --no-confirm && cd ../",
     "publish-prod": "ng build --configuration=production && cd ./serverless/  && sls client deploy --stage prod --no-confirm && cd ../",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -20,6 +21,7 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "@progress/kendo-licensing": "^1.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
